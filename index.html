@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LWEAXO | Portfolyo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://emojicdn.elk.sh/👑?style=google" type="image/png">
+    <link rel="stylesheet" href="lweaxo.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+<div id="initial-loader">
+    <div style="text-align: center;">
+        <i class="fas fa-spinner fa-spin" style="font-size: 3rem; color: var(--primary);"></i>
+        <p style="margin-top: 1rem; color: var(--text-secondary);">Yükleniyor...</p>
+    </div>
+</div>
+
+    <header class="header">
+        <div class="logo">
+            <i class="fab fa-github"></i>
+            <span>LWEAXO</span>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="#" class="nav-link active" data-tab="projects">
+                <i class="fas fa-code"></i>
+                <span>Projeler</span>
+            </a>
+            <a href="#" class="nav-link" data-tab="about">
+                <i class="fas fa-user"></i>
+                <span>Hakkımda</span>
+            </a>
+            <a href="#" class="nav-link" data-tab="contact">
+                <i class="fas fa-envelope"></i>
+                <span>İletişim</span>
+            </a> 
+            <a href="#" class="nav-link" data-tab="activity">
+                <i class="fas fa-gamepad"></i>
+                <span>Aktiviteler</span>
+            </a>
+        </nav>
+        
+        <button class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </header>
+
+    <main class="main-content">
+        <div class="content-header">
+            <h1 id="main-title">Projeler</h1>
+            <p>GitHub projelerimi keşfedin</p>
+        </div>
+
+        <section id="projects" class="tab-content active-tab">
+            <div class="section-header">
+                <h2>GitHub Projelerim</h2>
+                <div class="view-options">
+                    <button class="view-option active" data-view="grid"><i class="fas fa-th-large"></i></button>
+                    <button class="view-option" data-view="list"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+            <div class="projects-grid" id="projects-container">
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Projeler yükleniyor...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="tab-content">
+            <div class="about-section">
+                <div class="about-header">
+                    <div class="about-avatar">
+                        <img id="about-avatar" src="" alt="Profil Fotoğrafı">
+                    </div>
+                    <div class="about-title">
+                        <h2 id="about-name">Merhaba, Ben </h2>
+                        <p id="about-bio">Full Stack Developer</p>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p id="about-description">Profil bilgileri yükleniyor...</p>
+                </div>
+                <div class="skills-section">
+                    <h3>Yeteneklerim</h3>
+                    <div class="skills-grid" id="skills-container">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="tab-content">
+            <div class="contact-section">
+                <h2>Benimle İletişime Geçin</h2>
+                    <div class="social-buttons-container">
+                        <button class="social-btn discord-btn" data-link="https://discord.com/users/1015356240492245054" onclick="window.open('https://discord.com/users/1015356240492245054', '_blank', 'noopener,noreferrer')">
+                            <i class="fab fa-discord"></i>
+                            <span>Discord</span>
+                        </button>
+
+                        <button class="social-btn discord-btn" data-link="https://discord.gg/codeium" onclick="window.open('https://discord.gg/codeium', '_blank', 'noopener,noreferrer')">
+                            <i class="fab fa-discord"></i>
+                            <span>Discord Sunucum</span>
+                        </button>
+
+                        <button class="social-btn instagram-btn" data-link="https://www.instagram.com/lweaxo/" onclick="window.open('https://www.instagram.com/lweaxo/', '_blank', 'noopener,noreferrer')">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </button>
+
+                        <button class="social-btn github-btn" data-link="https://github.com/LWEAXO" onclick="window.open('https://github.com/LWEAXO', '_blank', 'noopener,noreferrer')">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </button>
+                    </div>
+            </div>
+        </section>
+
+        <section id="activity" class="tab-content">
+            <div class="activity-section">
+                <h2>Aktivitelerim</h2>
+                <div class="activity-container" id="activity-feed">
+                    <div class="loading-activities">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Aktiviteler yükleniyor...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer">
+    <div class="footer-content">
+         <p>© <span id="current-year">~</span> LWEAXO. Tüm hakları saklıdır.</p>
+            <a href="https://discord.com/users/1015356240492245054" class="footer-discord-btn" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-discord"></i>
+                <span>Discord</span>
+            </a>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="lweaxo.js"></script>
+    <script src="backend.js"></script>
+    <script>
+             document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
