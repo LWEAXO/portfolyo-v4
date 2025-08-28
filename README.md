@@ -72,7 +72,7 @@ CSS değişkenlerini değiştirerek temayı özelleştirebilirsiniz:
 ## 🌐 Canlı Demo
 
 Projeyi canlı olarak şu adresten görüntüleyebilirsiniz:  
-[🌍 LWEAXO Portfolio]()
+[🌍 LWEAXO Portfolio](https://lweaxo-portfolyo-v4.vercel.app/)
 
 ## 📱 Responsive Özellikler
 
@@ -108,5 +108,6 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 - [Lanyard](https://github.com/Phineas/lanyard) - Discord aktivite API'si için
 
 ---
+
 
 ⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
